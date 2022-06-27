@@ -1,0 +1,179 @@
+body {
+    padding:0;
+    margin:0;
+}
+.facebook-header{
+        width: 100%;
+}
+.left{
+        width:50%;
+        text-align: center;
+        font-size: 20px;
+}
+h1{
+        color:#0014ED;
+        font-weight: bold;
+}
+.facebook-home-page{
+        display:flex;
+        height:100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background: #DFDFDF;
+}
+.right{
+        width:50%;
+        display: block;
+        justify-content: center;
+        /*background: #000EA8;*/
+        align-items :center;
+        font-size: 20px;
+        
+}
+.home-page{
+        width:23rem;
+        height:25rem;
+        background: #FFFFFF;
+        box-shadow : -1px 1px 10px #626262;
+        margin-left:50%;
+        transform: translate( -50%);
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 10px;
+}
+.home-page p a{
+        text-decoration: none;
+        color:#000000;
+}
+.loginform{
+        display :block;
+        text-align: center;
+}
+.loginform input{
+        margin:10px 0px;
+        border:1px solid #000000;
+        width: 20rem;
+        padding:15px 0px;
+        border-radius: 4px;
+        font-size: 20px;
+}
+.loginform input[type=submit]{
+        color:#FFFFFF;
+        background: #414FE7;
+}
+hr{
+        width:90%;
+}
+.btn{
+        color:white;
+        margin:20px;
+        padding: 15px 40px;
+        background: #56B556;
+        border-radius: 8px;
+}
+.loginform p a{
+        text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+
+        .facebook-header{
+                height: 90%;
+                overflow: hidden;
+                background-color:#FFFFFF;
+        }
+        .facebook-header img{
+                width: 100%;
+                height: 100%;
+        }
+        .facebook-home-page{
+                background-color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                margin-top: 0px;
+                box-shadow: none;
+        }
+        .left{
+                margin-top: -150px;
+        }
+        .right{
+                width: 100%;
+
+                padding:0;
+                margin: 10px;
+        }
+         .right .home-page{
+                width:100%;
+                height:25rem;
+                background: #FFFFFF;
+                box-shadow : -1px 1px 10px #626262;
+                margin-left:50%;
+                transform: translate( -50%);
+                border-radius: 4px;
+                text-align: center;
+                margin-top: 10px;
+                box-shadow: none;
+        }
+        .facebook-home-page pre{
+                display: none;
+        }
+        h1{
+                font-size: 25px;
+        }
+        input{
+                margin:0px 0px;
+                border:1px solid #000000;
+                width: 80%;
+                padding:9px 0px 9px 12px;
+                margin: 5px;
+                   background: rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                font-size: 14px;
+        }
+        input[type=submit]{
+                padding: 7px 0px;
+                width: 84%;
+                color:#FFFFFF;
+                background: #414FE7;
+        }
+        .home-page p a{
+                text-decoration: none;
+                color:#414FE7;
+                font-size: 14px;
+        }
+        
+        .or::before{
+                content: "";
+                height: 1px;
+                width: 38%;
+                background: black;
+                position: absolute;
+                margin-left: -40%;
+                margin-top: 12px;
+                
+        }
+        .or::after{
+                content: "";
+                height: 1px;
+                width: 36%;
+                margin-top: 12px;
+                margin-left: 8px;
+                background: black;
+                position: absolute;
+        }
+        .btn{
+                color:white;
+                margin:20px;
+                padding: 8px 12px;
+                background: #03c903;
+                color: #FFFFFF;
+                border-radius: 2px;
+                border: transparent;
+        }
+        .home-page img{
+                width: 100%;
+                margin-top: -20px;
+        }
+      }
