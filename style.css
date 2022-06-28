@@ -90,10 +90,6 @@ hr{
         opacity: 0.5;
 }
 .btn{
-
-
-   
-   
          border: none;
         border-radius: 6px;
         font-size: 17px;
@@ -226,7 +222,8 @@ hr{
         .btn{
                 color:white;
                 margin:20px;
-                padding: 8px 12px;
+                padding: 2px 12px;
+                line-height: 26px;
                 font-size: 11.5px;
                 background: #42b72a;
                 color: #FFFFFF;
