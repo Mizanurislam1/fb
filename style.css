@@ -5,17 +5,14 @@ body {
     margin:0;
 }
 .facebook-header{
-        width: 100%;
+        display: none;
 }
 .left{
         width:50%;
         text-align: center;
         font-size: 20px;
 }
-h1{
-        color:#0014ED;
-        font-weight: bold;
-}
+
 .facebook-home-page{
         display:flex;
         height:100vh;
@@ -26,6 +23,7 @@ h1{
 }
 .right{
         width:50%;
+        /* height: ; */
         display: block;
         justify-content: center;
         /*background: #000EA8;*/
@@ -34,53 +32,93 @@ h1{
         
 }
 .home-page{
-        width:23rem;
-        height:25rem;
+        height: 351px;
+        width: 396px;
         background: #FFFFFF;
-        box-shadow : -1px 1px 10px #626262;
-        /* margin-left:50%; */
+        box-shadow: -1px 1px 10px #626262;
+        margin-left: 50%;
         transform: translate( -50%);
         border-radius: 4px;
         text-align: center;
         margin-top: 10px;
+        padding-top: 10px;
 }
 .home-page p a{
         text-decoration: none;
         color:#000000;
 }
-.loginform{
+#myform{
+        margin-top: 10px;
+}
+/* .loginform{
         display :block;
         text-align: center;
-}
-.loginform input{
-        margin:10px 0px;
+} */
+input{
+        margin:0px 0px;
         border:1px solid #000000;
-        width: 20rem;
-        padding:15px 0px;
+        width: 86%;
+        padding:16px 0px 16px 10px;
+        margin: 5px;
+        background: rgba(138, 137, 137,);
+        border: 1px solid gray;
         border-radius: 4px;
-        font-size: 20px;
+        font-size: 15px;
+        box-shadow: 1px 1px 2px rgb(221, 219, 219);
 }
-.loginform input[type=submit]{
+input[type=submit]{
+        padding: 9px 0px;
+        width: 89%;
         color:#FFFFFF;
-        background: #414FE7;
+        background: #1877f2;
+        font-weight: 800;
+        font-size: large;
+}
+
+input::-webkit-input-placeholder {
+        color: black; /*Change the placeholder color*/
+        opacity: 0.6; /*Change the opacity between 0 and 1*/
+   }
+
+
+.or{
+        display: none;
 }
 hr{
-        width:90%;
+        display:block;
+        width: 90%;
+        opacity: 0.5;
 }
 .btn{
-        color:white;
+
+
+   
+   
+         border: none;
+        border-radius: 6px;
+        font-size: 17px;
+        line-height: 48px;
+        padding: 0 16px;
         margin:20px;
-        padding: 15px 40px;
-        background: #56B556;
-        border-radius: 8px;
+        background: #42b72a;
+        color: #FFFFFF;
+        border: transparent;
+        font-family: 'Roboto', sans-serif;
+
 }
-.loginform p a{
+.home-page p a{
         text-decoration: none;
+        color:#1877f2;
+        font-size: 15px;
+        opacity: 1;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 400px) {
 
         .facebook-header{
+                display: block;
                 height: 90%;
                 overflow: hidden;
                 background-color:#FFFFFF;
@@ -145,6 +183,8 @@ hr{
                 width: 89%;
                 color:#FFFFFF;
                 background: #1877f2;
+                font-size: 17px;
+                font-weight: 500;
         }
         .home-page p a{
                 text-decoration: none;
@@ -154,9 +194,13 @@ hr{
                 font-weight: 500;
                 font-family: 'Roboto', sans-serif;
         }
+        hr{
+                display: none;
+        }
         .or{
                 opacity: 0.5;
                 font-size: 14px;
+                display: block;
         }
         .or::before{
                 content: "";
