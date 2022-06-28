@@ -55,10 +55,13 @@
             alert("username cannot be blank");
             return false;
         }
-        else if(password.length<8){
+        else if(password==null || password==""){
 
-            alert("password must be at least 8 characters long");
+            alert("you must have a password to login your page");
             return false;
+        }
+        else if(password.length<8){
+          alert("password at least 8 character long !")
         }
     }
 </script>
